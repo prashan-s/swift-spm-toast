@@ -1,9 +1,6 @@
 Toast for iOS
 =============
 
-[![CocoaPods Version](https://img.shields.io/cocoapods/v/Toast.svg)](http://cocoadocs.org/docsets/Toast)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
 Toast is an Objective-C category that adds toast notifications to the `UIView` object class. It is intended to be simple, lightweight, and easy to use. Most
  toast notifications can be triggered with a single line of code.
 
@@ -78,27 +75,24 @@ style.messageColor = [UIColor orangeColor];
     
 See the demo project for more examples.
 
-Setup Instructions
+Installation
 ------------------
 
-[CocoaPods](http://cocoapods.org)
-------------------
+### Swift Package Manager
 
-Install with CocoaPods by adding the following to your `Podfile`:
-```ruby
-pod 'Toast', '~> 4.1.1'
-```
+In Xcode:
 
-[Carthage](https://github.com/Carthage/Carthage)
-------------------
+1. Open your project.
+2. Go to **File > Add Package Dependencies**.
+3. Enter this repository URL.
+4. Select the required version, branch, or commit.
+5. Add the `Toast` package product to your app target.
 
-Install with Carthage by adding the following to your `Cartfile`:
-```ogdl
-github "scalessec/Toast" ~> 4.1.1
-```
-Run `carthage update --use-xcframeworks` to build the framework and link against `Toast.xcframework`. Then, `#import <Toast/Toast.h>`.
+If your fork does not yet have a release tag, use a branch-based requirement (for example, `main`) until you publish a stable tag.
 
-Manually
+Minimum supported iOS runtime version: **15.6**.
+
+Manual
 --------
 
 1. Add `UIView+Toast.h` & `UIView+Toast.m` to your project.
